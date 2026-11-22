@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TrafficLight",
+            "request": "launch",
+            "mainClass": "TrafficLight",
+            "vmArgs": "--module-path \"C:\\javafx-sdk-27\\lib\" --add-modules javafx.controls"
+        }
+    ]
+}
