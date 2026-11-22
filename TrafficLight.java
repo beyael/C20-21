@@ -43,7 +43,7 @@ public class TrafficLight extends Application {
 
         // Group radio buttons so only one light can be selected at a time
         ToggleGroup group = new ToggleGroup();
-        HBox radioPane = new HBox(15);
+        HBox radioPane = new HBox(20);
         radioPane.setAlignment(Pos.CENTER);
         radioPane.setPadding(new Insets(10));
 
@@ -62,23 +62,23 @@ public class TrafficLight extends Application {
         }
 
         // Arrange the three lights vertically inside the traffic light housing
-        VBox lightsBox = new VBox(12, redLight, yellowLight, greenLight);
+        VBox lightsBox = new VBox(10, redLight, yellowLight, greenLight);
         lightsBox.setAlignment(Pos.CENTER);
 
-        Rectangle housing = new Rectangle(70, 175);
+        Rectangle housing = new Rectangle(80, 180);
         housing.setFill(Color.WHITE);
         housing.setStroke(Color.BLACK);
 
         StackPane trafficLightPane = new StackPane(housing, lightsBox);
-        trafficLightPane.setPadding(new Insets(15));
+        trafficLightPane.setPadding(new Insets(20));
 
         // Main layout
         BorderPane root = new BorderPane();
         root.setCenter(trafficLightPane);
         root.setBottom(radioPane);
 
-        Scene scene = new Scene(root, 260, 250);
-        primaryStage.setTitle("Exercise16_03");
+        Scene scene = new Scene(root, 300, 260);
+        primaryStage.setTitle("Traffic Light");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
